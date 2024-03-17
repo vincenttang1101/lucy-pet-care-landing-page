@@ -6,8 +6,10 @@
 
 :root {
   --primary-color: #000958;
+  --secondary-color: #656689;
 
   --accent-color-1: #5e6085;
+  --accent-color-2: #ff5b2e;
 }
 
 html {
@@ -112,8 +114,13 @@ a:active {
   opacity: 0.7;
 }
 
+.hero {
+  margin-top: 100px;
+}
+
 .hero__inner {
   display: flex;
+  min-height: 582px;
 }
 
 .hero__media {
@@ -125,42 +132,45 @@ a:active {
   position: relative;
   width: 388px;
   height: 488px;
+  background: #fe997b;
+  border-radius: 16px;
 }
 
 .hero__main-img {
-  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .hero__decor-top {
   position: absolute;
-  top: 60px;
-  right: 9px;
+  top: 20px;
+  right: -44px;
+  z-index: -1;
 }
 
 .hero__decor-bottom {
   position: absolute;
-  left: -26px;
-  bottom: 65px;
+  left: -62px;
+  bottom: 0;
+  z-index: -1;
 }
 
 .hero__thumbnail {
   position: absolute;
-  bottom: -7px;
-  right: 99px;
+  bottom: 44px;
+  right: 53px;
   z-index: 2;
-  width: 182px;
-  height: 276px;
-  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+  background: #faa7ad;
 }
 
 .hero__card {
   position: absolute;
-  bottom: -33px;
-  left: 144px;
+  bottom: 0;
+  left: 134px;
   z-index: 3;
   padding: 18px 14px;
   width: 250px;
@@ -219,4 +229,80 @@ a:active {
   height: 4px;
   border-radius: 10px;
   background: #ebebf2;
+}
+
+.hero__content {
+  max-width: 517px;
+  padding-block: 71px;
+}
+
+.hero__title {
+  color: var(--primary-color);
+  font-size: 6.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.hero__desc {
+  margin-top: 24px;
+  max-width: 391px;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.87;
+}
+
+.hero__cta {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.hero__book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  outline: none;
+  border-radius: 31px;
+  border: none;
+  padding-inline: 22px;
+  min-width: 189px;
+  line-height: 60px;
+
+  background: var(--accent-color-2);
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  cursor: pointer;
+}
+
+.hero__book-btn:hover {
+  opacity: 0.9;
+}
+
+.hero__book-label {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hero__chevron-wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.hero__chevron-icon {
+  color: #fd5056;
+}
+
+.hero__link {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration-line: underline;
 }
