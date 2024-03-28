@@ -317,6 +317,7 @@ a:active {
 
 .about__inner {
   display: flex;
+  justify-content: space-between;
 }
 
 .about__content {
@@ -393,4 +394,39 @@ a:active {
   border-top-color: transparent;
   border-right-color: transparent;
   rotate: -45deg;
+}
+
+.about__media {
+  --about-media-width: 494; /* px */
+  width: calc(var(--about-media-width) / var(--container-width) * 100%);
+}
+
+.about__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 136px;
+  height: 156px;
+  padding-inline: 26px;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+svg.about__card-union {
+  position: absolute;
+  top: -38px;
+  right: -32px;
+}
+
+.about__card-value {
+  color: #fff;
+  font-family: Sora;
+  font-size: 42px;
+  font-weight: 700;
 }
