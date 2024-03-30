@@ -397,12 +397,25 @@ a:active {
 }
 
 .about__media {
+  position: relative;
+  margin-bottom: -77px;
+  align-self: self-end;
   --about-media-width: 494; /* px */
   width: calc(var(--about-media-width) / var(--container-width) * 100%);
+  height: 300px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+
+.about__media-background {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
 }
 
 .about__card {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
@@ -418,7 +431,7 @@ a:active {
   box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
 }
 
-svg.about__card-union {
+svg.about__card-decor {
   position: absolute;
   top: -38px;
   right: -32px;
@@ -429,4 +442,10 @@ svg.about__card-union {
   font-family: Sora;
   font-size: 42px;
   font-weight: 700;
+}
+
+.about__decor {
+  position: absolute;
+  top: -67px;
+  right: -52px;
 }
