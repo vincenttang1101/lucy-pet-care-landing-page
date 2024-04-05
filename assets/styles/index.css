@@ -955,3 +955,114 @@ svg.about__card-decor {
   font-size: 1.4rem;
   font-weight: 400;
 }
+
+.review {
+  margin-top: 53px;
+}
+
+.review__top {
+  display: flex;
+  align-items: center;
+}
+
+.review__arrow-wrapper {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #ffd1c4;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.review__arrow {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-color-2);
+}
+
+.review__arrow-wrapper:hover {
+  background: var(--accent-color-2);
+}
+
+.review__arrow-wrapper:hover .review__arrow {
+  color: #fff;
+}
+
+.review__content-main {
+  margin-inline-start: 44px;
+  margin-inline-end: 76px;
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.review__img-wrapper {
+  position: relative;
+  width: 274px;
+  height: 350px;
+  border-radius: 137px;
+  background: #ffda54;
+  flex-shrink: 0;
+}
+
+.review__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 137px;
+}
+
+.review__desc {
+  margin-top: 24px;
+  width: 560px;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.review__author {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: #282828;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.review__author::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+}
+
+.review__bottom {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.review__decor-horizon {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--accent-color-2);
+  cursor: pointer;
+}
+
+.review__decor-round {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color-2);
+  cursor: pointer;
+}
